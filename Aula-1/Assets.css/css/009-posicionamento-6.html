@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="utf-8"/>
+      <title>Posicion,Static, Relative,Absulute e Fixed</title>
+      <style>
+        .Container {
+          background: blueviolet;
+          color: #fff;
+          margin: 40px 0;
+          height: 150px;
+          /* Static */
+          /* Posicion static */
+          position: relative;
+        }
+
+        .Filho-relative {
+          background: red;
+          position: relative;
+          top: 10px;
+          left: 20px;
+          bottom: 20px;
+          right: 50px;
+
+          width: 120px;
+        }
+
+        .Filho-absulute {
+          background: red;
+          position: absolute;
+
+          top: 100px;
+          right: 10px;
+        }
+
+        .fixed {
+          font-size: 50px;
+          color: #fff;
+          background: red;
+
+          position: fixed;
+          top: 20px;
+          
+          z-index: 999;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="fixed">
+        Texto fixed
+      </div>
+
+      <div class="Container">
+        Texto 1
+
+        <div class="Filho-relative"> 
+          Texto 2
+        </div>
+
+        Texto 3
+      </div>
+
+      <div class="Container">
+        Texto 1
+
+        <div class="Filho-absulute">
+          Texto 2
+        </div>
+
+        Texto 3
+      </div>
+
+       </div>
+
+        Texto 3
+      </div>
+
+      <div class="Container">
+        Texto 1
+
+        <div class="Filho-absulute">
+          Texto 2
+        </div>
+
+        Texto 3
+      </div>
+    </body>
+</html>
